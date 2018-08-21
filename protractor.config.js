@@ -4,14 +4,14 @@ const path = require("path");
 const commonUtils = require('utils_for_tests');
 
 exports.config = {
-    directConnect: true,
+    seleniumAddress: "http://192.168.56.1:4444/wd/hub",
     baseUrl: 'https://vimeo.com/cameo',
     capabilities: {
         browserName: 'chrome',
         chromeOptions: {
             args: ['--window-size=1680,1050', '--disable-notifications', '--disable-infobars']
         },
-        platform: "Windows 10",
+        platform: "Windows",
         maxDuration: 10800
     },
     specs: [
