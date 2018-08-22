@@ -24,6 +24,10 @@ Feature: Main page
       | Videos          | 22           | 4              |
       | Creators        | 26           | 4              |
 
+    Scenario: Overlay of icons in Soundtrack Magic section
+      When I scroll to "Soundtracks" element
+      And I move mouse to "First Song"
+      Then "First Song" element should be overlayed
 
 
 

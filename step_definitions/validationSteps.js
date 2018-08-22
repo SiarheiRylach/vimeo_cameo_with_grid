@@ -38,5 +38,9 @@ defineSupportCode(({ Then, setDefaultTimeout }) => {
             return expect(visibility.isVisibleOnScreen(query.getProtractorElement(element))).to.eventually.eql(true);
         }
     });
+
+    Then(/^"(.*)" element should be overlayed$/, (element) => {
+        return expect(query.getProtractorElement(element).getCssValue('color')).to.eventually.not.equal("rgba(17, 34, 51, 1)");
+    });
 });
 

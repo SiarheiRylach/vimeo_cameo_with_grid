@@ -47,4 +47,7 @@ defineSupportCode(({Given, When, setDefaultTimeout}) =>{
         return browser.executeScript(`window.scrollBy(0,${200 * times})`);
     });
 
+    When(/^I scroll to "(.*)" element$/, (element) => {
+        return browser.executeScript('return arguments[0].scrollIntoView({block: "center"})', query.getProtractorElement(element));
+    });
 });

@@ -9,7 +9,6 @@ Feature: Download page
     When I wait until element "Download" is visible
     And I click on "Download"
     And I wait browser title contains "Cameo"
-    Then Page title should be "Cameo - Video Editor and Movie Maker on the App Store"
     And I should be on "Download Page" page
     And Text of element "Seller" should be "Vimeo"
     And Text of element "Size" should be "120.2 MB"

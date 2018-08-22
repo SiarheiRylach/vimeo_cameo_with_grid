@@ -16,6 +16,7 @@ class HomePage extends MasterPage{
         this['Soundtracks'] = element(by.css('#soundtracks > div'));
         this['Videos'] = element(by.css('#videos > div'));
         this['Creators'] = element(by.css('#creators .content_wrapper'));
+        this['First Song'] = this['Soundtracks'].element(by.css('.featured  .soundtrack1'));
     };
 
 }
