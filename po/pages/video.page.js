@@ -7,11 +7,14 @@ class VideoPage extends MasterPage{
 
     constructor() {
         super();
-        this['Watch video button'] = element(by.css('.watch_video_cta'));
-        this['Join our community section'] = element(by.css('.testimonials'));
-        this['Tool List Section'] = element(by.css('.tool_list_section'));
-        this['Join Vimeo Pro button'] = element(by.css('.big_cta_btn'));
-        this['Marketing section'] = element(by.css('.light_below_hero'));
+        this['Author link'] = element(by.css('.clip_info-subline--watch .js-user_link'));
+        this['Follow button'] = element(by.css('.clip_info-subline--watch button'));
+        this['Play button'] = element(by.css('button.play'));
+        this['Like button'] = element(by.css('.like-button'));
+        this['Watch later button'] = element(by.css('.watch-later-button'));
+        this['Add to collection button'] = element(by.css('.collections-button'));
+        this['Share button'] = element(by.css('.share-button'));
+        this['Settings'] = element(by.css('button.js-prefs'));
     };
 
 }
